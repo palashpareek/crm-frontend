@@ -7,7 +7,7 @@ const DefaultLayout = ({children}) =>{
         
         <div className='default-layout'>
            
-           <header>
+           <header className='header'>
            <Header />
            </header>
 
