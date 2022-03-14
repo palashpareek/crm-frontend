@@ -12,7 +12,7 @@ const DefaultLayout = ({children}) =>{
            </header>
 
            <main className='main'>
-         {children}
+             {children}
            </main>
 
           <footer className='footer'>
