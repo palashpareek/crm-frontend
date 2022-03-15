@@ -45,7 +45,7 @@ const handleOnSubmit = e => {
              <Row>
                  <Col>
                  <AddTicketForm 
-                  handleOnChange={handleOnChange}
+                 handleOnChange={handleOnChange}
                  handleOnSubmit={handleOnSubmit}
                  frmDt = {frmData}
                  />
