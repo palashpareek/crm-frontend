@@ -1,9 +1,10 @@
 import React from 'react';
-import Tbale, { Table } from 'react-bootstrap'
+import  { Table } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const TicketTable = ({tickets}) =>{
        return (
-        <Table striped bordered hover>
+        <Table  bordered hover>
             <thead>
                 <tr>
                     <th>S.No</th>
@@ -17,7 +18,9 @@ const TicketTable = ({tickets}) =>{
                 {tickets.length ? tickets.map((row)=> (
                  <tr key={row.id}>
                  <td>{row.id}</td>
+                 <Link to={`/ticket${row.id}`}>
                  <td>{row.subject}</td>
+                 </Link>
                  <td>{row.status}</td>
                  <td>{row.addedAt}</td>
              </tr>
